@@ -1,0 +1,3 @@
+/home/mirong/CLionProjects/hse/plusi/ut/Platformer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mirong/CLionProjects/hse/plusi/ut/Platformer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mirong/CLionProjects/hse/plusi/ut/Platformer/cmake-build-debug/CMakeFiles/Platformer.dir
