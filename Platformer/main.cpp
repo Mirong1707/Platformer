@@ -8,7 +8,6 @@ int main() {
     // Create the main window
     sf::RenderWindow window(sf::VideoMode(1500, 1500), "SFML window");
     sf::Clock clock;
-    sf::Keyboard keyboard;
     float lastTime = 0;
     std::vector<std::shared_ptr<pe::Shape>> drawable;
     std::shared_ptr<pe::Rectangle> rect = std::make_shared<pe::Rectangle>(sf::Vector2<float>(500.0, 500.0),
@@ -23,20 +22,20 @@ int main() {
             std::cout << "!!!\n";
         }
 
-        if(keyboard.isKeyPressed(sf::Keyboard::Right)){
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
             rect->move(sf::Vector2<float>(1, 0));
         }
-        if(keyboard.isKeyPressed(sf::Keyboard::Left)){
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
             rect->move(sf::Vector2<float>(-1, 0));
         }
-        if(keyboard.isKeyPressed(sf::Keyboard::Up)){
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){
             rect->move(sf::Vector2<float>(0, -1));
         }
-        if(keyboard.isKeyPressed(sf::Keyboard::Down)){
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){
             rect->move(sf::Vector2<float>(0, 1));
         }
         // Process events
-        sf::Event event;
+        sf::Event event{};
         while (window.pollEvent(event)) {
             // Close window: exit
             if (event.type == sf::Event::Closed)
