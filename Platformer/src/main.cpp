@@ -1,7 +1,7 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "Shape.h"
+#include "../include/Shape.h"
 
 int main() {
     int w = 200, h = 200;
